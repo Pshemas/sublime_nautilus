@@ -14,7 +14,7 @@ from gi.repository import Nautilus, GObject
 from subprocess import call
 import os
 
-# path to vscode
+# path to SublimeText
 SUBL = "subl"
 
 # what name do you want to see in the context menu?
@@ -34,7 +34,7 @@ class SublimeTextExtension(GObject.GObject, Nautilus.MenuProvider):
             safepaths += '"' + filepath + '" '
 
             # If one of the files we are trying to open is a folder
-            # create a new instance of vscode
+            # create a new instance of Sublime
             if os.path.isdir(filepath) and os.path.exists(filepath):
                 args = "-wn "
 

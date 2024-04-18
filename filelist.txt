@@ -1,0 +1,4 @@
+filelist.txt
+LICENSE
+nautilus-sublime.py
+README.md
